@@ -34,3 +34,8 @@ ed inoltre nel Manifest dovremmo aggiungere il permesso per accedere ad internet
 <uses-permission android:name="android.permission.INTERNET" />
 
 
+Lanciando il programma la nostra pagina web si caricherà, ma potrebbe non funzionare come ci attendiamo (es: potrebbe non essere possibile aprire il menù); ciò accade quando all'interno della pagina web è presente del codice JavaScript.
+In questi casi è necessario abilitare il codice Javascript e lo si fa aggiungendo, prima di caricare la url, la seguente riga di comando:
+
+myWebView.settings.javaScriptEnabled = true
+        
