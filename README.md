@@ -38,4 +38,10 @@ Lanciando il programma la nostra pagina web si caricherà, ma potrebbe non funzi
 In questi casi è necessario abilitare il codice Javascript e lo si fa aggiungendo, prima di caricare la url, la seguente riga di comando:
 
 myWebView.settings.javaScriptEnabled = true
-        
+
+A questo punto però avrete notato che viene aperto un browser web standard; se vogliamo che la pagina web si apra all'interno della nostra app e che non venga mostrata la barra dell'indirizzo web, allor adobbiamo aggiunre l'istruzione:
+
+myWebView.webViewClient = WebViewClient()
+
+(sarà necessario importare la classe webViewClient)
+
